@@ -16,7 +16,5 @@ set ( BZIP2_SRCS blocksort.c huffman.c crctable.c randtable.c compress.c decompr
 
 add_library ( bz2 ${BZIP2_SRCS} libbz2.def )
 
-target_link_libraries ( bzip2 bz2 )
-
 install_library ( bz2 )
 install_header ( bzlib.h )
